@@ -1,0 +1,36 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "11:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: googleapis
+    versions:
+    - 67.0.0
+    - 67.1.0
+    - 67.1.1
+    - 68.0.0
+    - 70.0.0
+    - 71.0.0
+  - dependency-name: next
+    versions:
+    - 10.0.5
+    - 10.0.6
+    - 10.0.7
+    - 10.0.8
+    - 10.0.9
+  - dependency-name: "@sendgrid/mail"
+    versions:
+    - 7.4.1
+  - dependency-name: lodash
+    versions:
+    - 4.17.20
+  - dependency-name: lerna
+    versions:
+    - 3.22.1
+  - dependency-name: elliptic
+    versions:
+    - 6.5.3
